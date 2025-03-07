@@ -16,7 +16,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         const { folder } = params as { folder: string };
         return new Promise((resolve, reject) => {
           exec(
-            `pnpm create astro@latest ./apps/${folder} -- --template TheMostDangerousGames/zodiac-add-game --install --no-git --skip-houston`,
+            `pnpm create astro@latest ./apps/${folder} -- --template melted-games/zodiac-add-game --install --no-git --skip-houston`,
             (error, stdout, stderr) => {
               if (error) {
                 console.error(`Error: ${error.message}`);
